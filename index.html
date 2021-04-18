@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Budgety App</title>
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+
+
+	<section class="budget">
+		<h1 class="total-existance">+ 41316</h1>
+		<div class="income">
+			<span>INCOME</span>
+			<span class="amount">+ 1651</span>
+		</div>
+		<div class="expenses">
+			<span>EXPENSES</span>
+			<span class="amount">- 1651</span>
+		</div>
+	</section>
+
+
+
+
+	<section class="form">
+		<form>
+			<select class="add__type">
+				<option value="inc" selected>Income</option>
+				<option value="exp">Expense</option>
+			</select>
+			
+			 <input class="field description" type="text" placeholder="Budget Name">
+
+			 <input class="field value" type="number">
+
+			 <span class="add__item fa fa-check-circle-o"></span>
+		</form>
+	</section>
+
+
+
+
+	<section class="list-container">
+		<div class="income-ui">
+			<h4 style="color: #4CAF50">INCOME</h4>
+			<ul class="income-list">
+				<!-- <li class="list-item"><span>wegsite budget</span> <span class="list-count"> 26422 <i class="fa fa-remove" ></i></span></li> -->
+			</ul>
+		</div>
+		<div class="expenses-ui">
+			<h4 style="color: #F44336">EXPENSES</h4>
+			<ul class="expenses-list">
+				<!-- <li class="list-item"><span>wegsite budget</span> <span class="list-count"> 26422 <i class="percentage">30%</i> <i class="fa fa-remove" ></i> </span></li> -->
+			</ul>
+		</div>
+	</section>
+
+
+
+	
+<script src="app.js"></script>
+</body>
+</html>

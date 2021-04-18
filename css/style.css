@@ -1,0 +1,164 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	--primary:#4CAF50;
+	--secondary:#F44336;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+.total-existance{
+	color: #fff;
+	font-size: 40px;
+	font-weight: 300px;
+}
+h4{
+	color: #5f5f5f;
+	margin-bottom: 10px;
+}
+
+.budget{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url('../img-2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 50px;
+	padding-bottom: 14px;
+	color: #fff;
+}
+
+.budget .income, .budget .expenses{
+	width: 320px;
+	padding: 16px;
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 8px;
+	text-transform: capitalize;
+	font-size: 14px;
+}
+
+.budget .income{
+	background: #4CAF50;
+}
+
+.budget .expenses{
+	background: #F44336;
+}
+
+
+/* form section */
+
+
+.form{
+	display: flex;
+	grid-gap: 10px;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background: #ebebeb;
+	border: 1px solid #ddd;
+}
+
+.form select{
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+.form .field{
+	padding: 10px 15px;
+	border: 1px solid #ddd;
+}
+.form .field:focus{
+	outline: none;
+	box-shadow: 0 0 10px rgba(255,144,244,0.1);
+}
+.form .field.description{
+	width: 300px;
+}
+.form .field.value{
+	width: 100px;
+}
+
+.form .fa-check-circle-o{
+	font-size: 25px;
+	font-weight: 200;
+	color: dodgerblue;
+	cursor: pointer;
+}
+
+
+/* ui - list container section*/
+
+
+.list-container{
+	margin-top: 20px;
+	display: flex;
+	grid-gap: 25px;
+	justify-content: center;
+}
+
+.list-container li{
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #e5e5e5e0;
+	padding: 14px;
+	font-size: 14px;
+	list-style: none;
+}
+
+.list-container .list-item:nth-child(even) {
+	background: #e5e5e5e0;
+}
+
+.income-ui{
+	width: 300px;
+}
+
+
+.expenses-ui{
+	width: 300px;
+}
+
+
+.income-ui .list-count{
+	color: #4CAF50;
+}
+.expenses-ui .list-count{
+	color: #F44336;
+}
+
+
+.list-container .fa-remove{
+	color: #f44336cf;
+	border: 1px solid #f44336cf;
+	border-radius: 50%;
+	padding: 2px;
+	cursor: pointer;
+	transform: translate(100px,0);
+	transition: 0.2s;
+}
+.list-item{
+	
+	overflow: hidden;
+}
+
+.list-item .percentage{
+	padding: 4px;
+    color: #fff;
+    border-radius: 10%;
+    background: #f443368c;
+}
+
+.list-item:hover .fa-remove{
+	transform: translate(0,0);
+}
